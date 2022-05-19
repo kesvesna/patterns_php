@@ -31,5 +31,15 @@ abstract class DuckBase
         echo "I'm swimming." . PHP_EOL;
     }
 
+    public function setFlyBehaviour(IFlyable $newFlyBehaviour)
+    {
+        $this->flyBehaviour = $newFlyBehaviour;
+    }
+
+    public function setQuackBehaviour(IQuackable $newQuackBehaviour)
+    {
+        $this->quackBehaviour = $newQuackBehaviour;
+    }
+
     abstract public function display(): void;
 }

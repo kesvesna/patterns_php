@@ -17,5 +17,7 @@ abstract class DuckBase
         echo "I'am flying." . PHP_EOL;
     }
 
+
+
     abstract public function display(): void;
 }
